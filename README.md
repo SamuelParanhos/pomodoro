@@ -149,14 +149,3 @@ Uma sessão pausada permanece pausada após reabrir a página. As falhas de leit
 O áudio depende de interação do usuário e das políticas do navegador. Use **Ativar som** para liberar o alerta. O ambiente começa pausado ao reabrir a página; suas preferências são recuperadas, mas a reprodução exige um novo clique. O alerta e o ambiente possuem controles independentes. Não há reprodução com o navegador fechado, e o sistema pode suspender o áudio em segundo plano ou com a tela bloqueada.
 
 Os limites dos campos são aplicados nos formulários, mas algumas mensagens de validação são fornecidas pelo navegador e podem seguir seu idioma. A compatibilidade entre diferentes navegadores, a acessibilidade completa e o limite de resposta de 100 ms exigem validação específica antes de afirmar conformidade integral com os requisitos.
-
-## Verificação sugerida antes da entrega
-
-1. Executar `npm test`, `npm run format:check` e `npm run build`.
-2. Conferir criação, edição, limites dos campos e cancelamento de exclusões de tarefas e temporizadores.
-3. Verificar o bloqueio de alteração do temporizador em uso e a troca durante uma sessão.
-4. Testar pausar, retomar, pular fase, reiniciar, encerrar e descartar uma sessão restaurada.
-5. Reabrir a aplicação com uma sessão pausada e outra em andamento, inclusive após o vencimento de várias fases.
-6. Conferir a ordem das tarefas, os temas e o layout em desktop e celular.
-7. Conferir áudio, navegação por teclado e comportamento em outros navegadores.
-8. Resolver as pendências de aderência ao documento e confirmar que a versão final está disponível publicamente até a data de entrega.
